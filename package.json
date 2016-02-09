@@ -22,9 +22,10 @@
   },
   "homepage": "https://github.com/gianfebrian/ah-mongoosejs-plugin",
   "dependencies": {
-    "mongoose": "^4.4.2",
     "async": "^1.5.2",
-    "lodash": "^4.2.0"
+    "lodash": "^4.2.0",
+    "mkdirp": "^0.5.1",
+    "mongoose": "^4.4.2"
   },
   "devDependencies": {
     "chai": "^3.5.0",

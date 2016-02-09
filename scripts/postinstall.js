@@ -2,6 +2,7 @@
 
 var fs = require('fs');
 var path = require('path');
+var mkdirp = require('mkdirp');
 
 var srcFile   = path.normalize(__dirname + '/../config/mongoose.js');
 var destFile = path.normalize(process.cwd() + '/../../config/mongoose.js');
