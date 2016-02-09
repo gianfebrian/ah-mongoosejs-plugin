@@ -10,3 +10,5 @@ if(!fs.existsSync(destFile)) {
   console.log("Copying " + srcFile + " to " + destFile);
   fs.createReadStream(srcFile).pipe(fs.createWriteStream(destFile));
 }
+
+mkdirp.sync(path.normalize(process.cwd() + '/../../document_models'));

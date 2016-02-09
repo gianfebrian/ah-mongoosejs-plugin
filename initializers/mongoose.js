@@ -9,13 +9,13 @@ module.exports = {
 
   initialize: function(api, next) {
     api.mongoose = mongoose;
-    api.models = api.models || {};
+    api.documents = api.documents || {};
 
     var dir = path.normalize(api.config.model_path);
     fs.readdirSync(dir).forEach(function(file) {
       var nameParts = file.split("/");
       var name = nameParts[(nameParts.length - 1)].split(".")[0];
-      api.models[name] = require(dir + '/' + file);
+      api.documents[name] = require(dir + '/' + file);
     });
     next();
   },
