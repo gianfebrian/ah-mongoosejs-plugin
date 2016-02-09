@@ -1,0 +1,33 @@
+{
+  "name": "ah-mongoosejs-plugin",
+  "version": "0.0.1",
+  "description": "actionhero mongoosejs plugin",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:gianfebrian/ah-mongoosejs-plugin.git"
+  },
+  "keywords": [
+    "actionhero",
+    "mongoose",
+    "ah-mongoosejs-plugin"
+  ],
+  "author": "Gian Febrian",
+  "license": "GPL",
+  "bugs": {
+    "url": "https://github.com/gianfebrian/ah-mongoosejs-plugin/issues"
+  },
+  "homepage": "https://github.com/gianfebrian/ah-mongoosejs-plugin",
+  "dependencies": {
+    "mongoose": "^4.4.2",
+    "async": "^1.5.2",
+    "lodash": "^4.2.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-factories": "^0.1.0",
+    "faker": "^3.0.1"
+  }
+}
