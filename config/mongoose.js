@@ -4,7 +4,7 @@ exports.default = {
       auto_start: true,
       connection_string: "mongodb://USER:PASSWORD@HOST:PORT/DATABASE",
       debug: true,
-      model_path: api.project_root + '/document_models'
+      model_path: api.projectRoot + '/document_models'
     }
   }
 }
@@ -15,7 +15,7 @@ exports.test = {
       auto_start: false,
       connection_string: "mongodb://USER:PASSWORD@HOST:PORT/DATABASE",
       debug: false,
-      model_path: api.project_root + '/document_models'
+      model_path: api.projectRoot + '/document_models'
     }
   }
 }
@@ -26,7 +26,7 @@ exports.production = {
       auto_start: true,
       connection_string: "mongodb://USER:PASSWORD@HOST:PORT/DATABASE",
       debug: false,
-      model_path: api.project_root + '/document_models'
+      model_path: api.projectRoot + '/document_models'
     }
   }
 }
