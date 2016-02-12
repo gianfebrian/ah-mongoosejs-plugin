@@ -8,10 +8,11 @@ module.exports = {
   stopPriority: 1000,
 
   initialize: function(api, next) {
+    var config = api.config.mongoose;
     api.mongoose = mongoose;
     api.documents = api.documents || {};
 
-    var dir = path.normalize(api.config.model_path);
+    var dir = path.normalize(config.model_path);
     fs.readdirSync(dir).forEach(function(file) {
       var nameParts = file.split("/");
       var name = nameParts[(nameParts.length - 1)].split(".")[0];
@@ -21,7 +22,7 @@ module.exports = {
   },
 
   start: function(api, next) {
-    mongoose.connect(api.config.mongoose.connection_string, null, next);
+    mongoose.connect(config.mongoose.connection_string, null, next);
   },
 
   stop: function(api, next) {
