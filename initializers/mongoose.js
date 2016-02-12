@@ -20,7 +20,7 @@ module.exports = {
   },
 
   start: function(api, next) {
-    mongoose.connect(api.config.mongoose.mongoose.connection_string, null, next);
+    mongoose.connect(api.config.mongoose.connection_string, null, next);
   },
 
   stop: function(api, next) {
